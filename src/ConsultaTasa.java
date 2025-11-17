@@ -8,13 +8,14 @@ import java.net.http.HttpResponse;
 
 public class ConsultaTasa {
 
-    private static final String API_KEY = "0227dc08227b0a97a9346152";
+    //Mi clave generada por la API de conversion
+    private static final String claveApi = "0227dc08227b0a97a9346152";
 
-    public ResultadoConversion consultarPar(String base, String target, double amount) {
+    public ResultadoConversion consultarPar(String monedaOrigen, String monedaDestino, double monto) {
 
         String url = String.format(
                 "https://v6.exchangerate-api.com/v6/%s/pair/%s/%s",
-                API_KEY, base, target
+                claveApi, monedaOrigen, monedaDestino
         );
 
         HttpClient client = HttpClient.newHttpClient();
@@ -35,13 +36,14 @@ public class ConsultaTasa {
                 throw new RuntimeException("API: " + json.get("error-type").getAsString());
             }
 
-            double rate = json.get("conversion_rate").getAsDouble();
-            double resultado = rate * amount;
+            double tasa = json.get("conversion _rate").getAsDouble();
+            double resultado = tasa * monto;
 
+            //Objeto como resultado de la conversion
             return new ResultadoConversion(
-                    base,
-                    target,
-                    rate,
+                    monedaOrigen,
+                    monedaDestino,
+                    tasa,
                     resultado
             );
 

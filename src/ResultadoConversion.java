@@ -1,6 +1,6 @@
 public record ResultadoConversion(
-        String baseCode,
-        String targetCode,
-        double conversionRate,
-        double conversionResult
+        String codigoMonedaOrigen,
+        String codigoMonedaDestino,
+        double conversionTasa,
+        double conversionResultado
 ) {}

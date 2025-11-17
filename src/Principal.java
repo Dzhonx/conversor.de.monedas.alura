@@ -61,12 +61,11 @@ public class Principal {
 
             try {
                 ResultadoConversion r = consulta.consultarPar(base, target, monto);
-
                 System.out.println("\n--- RESULTADO ---");
-                System.out.println("Moneda base: " + r.baseCode());
-                System.out.println("Moneda destino: " + r.targetCode());
-                System.out.println("Tasa: " + r.conversionRate());
-                System.out.println("Monto convertido: " + r.conversionResult());
+                System.out.println("Moneda base: " + r.codigoMonedaOrigen());
+                System.out.println("Moneda destino: " + r.codigoMonedaDestino());
+                System.out.println("Tasa: " + r.conversionTasa());
+                System.out.println("Monto convertido: " + r.conversionResultado());
                 System.out.println("-------------------\n");
 
             } catch (Exception e) {
