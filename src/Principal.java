@@ -24,7 +24,7 @@ public class Principal {
             try {
                 opcion = Integer.parseInt(scanner.nextLine());
             } catch (NumberFormatException e) {
-                System.out.println("⚠ Ingrese un número válido.\n");
+                System.out.println("Ingrese un número válido.\n");
                 continue;
             }
 
