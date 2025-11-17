@@ -36,7 +36,7 @@ public class ConsultaTasa {
                 throw new RuntimeException("API: " + json.get("error-type").getAsString());
             }
 
-            double tasa = json.get("conversion _rate").getAsDouble();
+            double tasa = json.get("conversion_rate").getAsDouble();
             double resultado = tasa * monto;
 
             //Objeto como resultado de la conversion

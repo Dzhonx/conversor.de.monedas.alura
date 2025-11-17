@@ -33,16 +33,16 @@ public class Principal {
                 break;
             }
 
-            String base = "";
-            String target = "";
+            String origen = "";
+            String destino = "";
 
             switch (opcion) {
-                case 1 -> { base = "USD"; target = "ARS"; }
-                case 2 -> { base = "ARS"; target = "USD"; }
-                case 3 -> { base = "USD"; target = "BRL"; }
-                case 4 -> { base = "BRL"; target = "USD"; }
-                case 5 -> { base = "USD"; target = "COP"; }
-                case 6 -> { base = "COP"; target = "USD"; }
+                case 1 -> { origen = "USD"; destino = "ARS"; }
+                case 2 -> { origen = "ARS"; destino = "USD"; }
+                case 3 -> { origen = "USD"; destino = "BRL"; }
+                case 4 -> { origen = "BRL"; destino = "USD"; }
+                case 5 -> { origen = "USD"; destino = "COP"; }
+                case 6 -> { origen = "COP"; destino = "USD"; }
                 default -> {
                     System.out.println("Opción inválida.\n");
                     continue;
@@ -60,7 +60,7 @@ public class Principal {
             }
 
             try {
-                ResultadoConversion r = consulta.consultarPar(base, target, monto);
+                ResultadoConversion r = consulta.consultarPar(origen, destino, monto);
                 System.out.println("\n--- RESULTADO ---");
                 System.out.println("Moneda base: " + r.codigoMonedaOrigen());
                 System.out.println("Moneda destino: " + r.codigoMonedaDestino());
