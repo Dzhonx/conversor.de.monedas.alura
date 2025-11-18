@@ -122,11 +122,11 @@ Contiene el menú y controla la aplicación.
 
 ## Manejo de errores
 
-- ❌ Opciones inválidas  
-- ❌ Números mal ingresados  
-- ❌ Clave API incorrecta  
-- ❌ Fallos de conexión  
-- ❌ Monedas no soportadas  
+- X Opciones inválidas  
+- X Números mal ingresados  
+- X Clave API incorrecta  
+- X Fallos de conexión  
+- X Monedas no soportadas  
 
 ---
 
