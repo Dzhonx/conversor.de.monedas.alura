@@ -46,7 +46,7 @@ Debes generar tu propia API key.
 En el código, la clave se configura en:
 
 ```java
-private static final String claveApi = "TU_API_KEY";
+private static final String claveApi = "TU_API_KEY_AQUI";
 ```
 
 Reemplázala con tu clave!.
