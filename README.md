@@ -1,12 +1,11 @@
-[README.md](https://github.com/user-attachments/files/23595045/README.md)
-# 🪙 Conversor de Monedas – Java (API ExchangeRate)
+# Conversor de Monedas – Java (API ExchangeRate)
 
 Este es un proyecto en **Java** que permite convertir distintas monedas en tiempo real utilizando la API gratuita de **ExchangeRate API**.  
 El usuario selecciona un tipo de conversión, ingresa un monto y la aplicación devuelve el resultado junto con la tasa aplicada.
 
 ---
 
-## 📌 Características
+## Características
 
 - ✔ Conversión en tiempo real usando HTTP requests  
 - ✔ Integración con API ExchangeRate  
@@ -17,7 +16,7 @@ El usuario selecciona un tipo de conversión, ingresa un monto y la aplicación 
 
 ---
 
-## 🚀 Tecnologías usadas
+## Tecnologías usadas
 
 - **Java 17+**
 - **HttpClient** (para solicitudes HTTP)
@@ -26,35 +25,35 @@ El usuario selecciona un tipo de conversión, ingresa un monto y la aplicación 
 
 ---
 
-## 📦 Estructura del proyecto
+## Estructura del proyecto
 
 ```
 /src
- ├── Principal.java
- ├── ConsultaTasa.java
- └── ResultadoConversion.java
+ ─ Principal.java
+ ─ ConsultaTasa.java
+ ─ ResultadoConversion.java
 ```
 
 ---
 
-## 🔐 Configuración de la API
+## Configuración de la API
 
 Este proyecto usa la API de:
 
-👉 https://www.exchangerate-api.com/
+=> https://www.exchangerate-api.com/
 
 Debes generar tu propia API key.  
 En el código, la clave se configura en:
 
 ```java
-private static final String claveApi = "TU_API_KEY_AQUI";
+private static final String claveApi = "TU_API_KEY";
 ```
 
-Reemplázala con tu clave.
+Reemplázala con tu clave!.
 
 ---
 
-## 🧠 ¿Cómo funciona?
+## ¿Cómo funciona?
 
 1. El usuario selecciona un tipo de cambio.  
 2. Ingresa un monto.  
@@ -66,7 +65,7 @@ Reemplázala con tu clave.
 
 ---
 
-## ▶️ Ejecución
+## Ejecución
 
 Compilar:
 
@@ -82,7 +81,7 @@ java Principal
 
 ---
 
-## 📘 Ejemplo de uso
+## Ejemplo de uso
 
 ```
 ============================================
@@ -108,7 +107,7 @@ Monto convertido: 10325.0
 
 ---
 
-## 🧩 Clases del proyecto
+## Clases del proyecto
 
 ### `ConsultaTasa.java`
 Realiza la petición HTTP, obtiene la tasa de conversión y calcula el total.
@@ -121,7 +120,7 @@ Contiene el menú y controla la aplicación.
 
 ---
 
-## 🛡️ Manejo de errores
+## Manejo de errores
 
 - ❌ Opciones inválidas  
 - ❌ Números mal ingresados  
@@ -131,6 +130,6 @@ Contiene el menú y controla la aplicación.
 
 ---
 
-## 📄 Licencia
+## Licencia
 
 Uso libre para fines educativos.
