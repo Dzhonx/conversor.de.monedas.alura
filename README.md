@@ -7,12 +7,12 @@ El usuario selecciona un tipo de conversión, ingresa un monto y la aplicación 
 
 ## Características
 
-- ✔ Conversión en tiempo real usando HTTP requests  
-- ✔ Integración con API ExchangeRate  
-- ✔ Manejo de errores y validaciones  
-- ✔ Menú interactivo por consola  
-- ✔ Código organizado en clases (`Principal`, `ConsultaTasa`, `ResultadoConversion`)  
-- ✔ Uso de `record` para almacenar el resultado de manera simple y profesional  
+- Conversión en tiempo real usando HTTP requests  
+- Integración con API ExchangeRate  
+- Manejo de errores y validaciones  
+- Menú interactivo por consola  
+- Código organizado en clases (`Principal`, `ConsultaTasa`, `ResultadoConversion`)  
+- Uso de `record` para almacenar el resultado de manera simple y profesional  
 
 ---
 
@@ -122,11 +122,11 @@ Contiene el menú y controla la aplicación.
 
 ## Manejo de errores
 
-- X Opciones inválidas  
-- X Números mal ingresados  
-- X Clave API incorrecta  
-- X Fallos de conexión  
-- X Monedas no soportadas  
+- Opciones inválidas  
+- Números mal ingresados  
+- Clave API incorrecta  
+- Fallos de conexión  
+- Monedas no soportadas  
 
 ---
 
